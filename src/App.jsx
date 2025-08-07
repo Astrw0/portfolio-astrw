@@ -38,9 +38,9 @@ function App() {
     <div className="absolute top-[100px] left-1/2 -translate-x-1/2 z-10 w-[780px] ml-6">
   <div className="flex items-center space-x-4">
     <img
-      src="/path/to/ton-avatar.jpg"
+      src="/pp.png"
       alt="Photo de profil"
-      className="w-30 h-30 rounded-full border border-white shadow-lg object-cover"
+      className="w-30 h-30 rounded-full shadow-lg object-cover"
     />
     <div className="flex flex-col -translate-y-2">
       <p className="text-[#FFFAFA] text-left text-5xl font-playfair italic pb-4 font-bold">Bertrand Vigogne</p>
