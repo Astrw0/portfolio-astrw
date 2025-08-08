@@ -74,7 +74,7 @@ const SilkPlane = forwardRef(function SilkPlane({ uniforms }, ref) {
 
   useLayoutEffect(() => {
     if (ref.current) {
-      ref.current.scale.set(viewport.width, viewport.height, 1);
+      ref.current.scale.set(viewport.width, viewport.height * 3, 1);
     }
   }, [ref, viewport]);
 
