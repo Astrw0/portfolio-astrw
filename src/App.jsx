@@ -80,12 +80,12 @@ function App() {
       whatDoneItems: [
         <>Construire une communauté de plus de 2,5k abonnés et plus de 500k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vues sur <a href="https://www.youtube.com/@Astrw__" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Youtube</a> et <a href="https://www.tiktok.com/@astrw.x" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Tiktok</a>.</>,
         <>Créer des vidéos pour des chaînes avec <a href="https://www.youtube.com/@NaxoLCN" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">7.81k</a>, <a href="https://www.youtube.com/@ShotaPrime" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">81.1k</a> et <a href="https://www.youtube.com/@darteuh" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">139k</a> abonnés.</>,
-        <>J'apprends à coder depuis l'âge de 7 ans et j'apprécie toujours ça &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aujourd'hui.</>,
+        <>Avoir découvert le monde de l'informatique à 7 ans et toujours être &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;passionné aujourd'hui.</>,
       ],
       whatBuiltTitle: "Ce que j'ai construit",
       whatBuiltItems: [
         <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un exemple de site pour une boutique TGC</a></>,
-        <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un bot Discord pour suivre la productivité avec l'API Notion</a></>,
+        <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un bot Discord pour tracker la productivité avec l'API Notion</a></>,
       ],
       loveWorkingTitle: "J'aime travailler avec ...",
       loveWorkingItems: [
