@@ -53,7 +53,7 @@ function App() {
     <div className="absolute top-[100px] left-1/2 -translate-x-1/2 z-10 w-[780px] ml-6">
   <div className="flex items-center space-x-4">
     <img
-      src="/.png"
+      src="/ppv3.jpg"
       alt="Photo de profil"
       className="w-32 h-32 rounded-full shadow-lg object-cover"
     />
@@ -181,9 +181,9 @@ function App() {
     alt: "Description 1",
     tooltip: "Me gardening with my cat"
   },{
-    src: "/path/to/image2.jpg",
+    src: "/working.jpg",
     alt: "Description 2",
-    tooltip: "Message 2"
+    tooltip: "Me working"
   },{
     src: "/path/to/image3.jpg",
     alt: "Description 3",
