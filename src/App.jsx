@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { School, Heart } from "lucide-react";
+import './App.css'
 
 function App() {
   const [lang, setLang] = useState('en'); // 'en' ou 'fr'
@@ -116,7 +117,7 @@ function App() {
   const t = texts[lang];
 
   return (
-    <>
+    <div className="">
       <header className="fixed top-0 left-1/2 -translate-x-1/2 z-20 w-[780px] h-[60px] flex items-center justify-between px-6 text-[#FFFAFA] bg-transparent rounded-lg">
         <div className="leading-none font-google"><a href="https://astrw.me">astrw.me</a></div>
         <div className="flex items-center space-x-4">
@@ -272,7 +273,7 @@ function App() {
         </footer>
         <div className='h-20'></div>
       </div>
-    </>
+    </div>
   );
 }
 
