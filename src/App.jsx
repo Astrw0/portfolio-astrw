@@ -41,7 +41,7 @@ function App() {
       soFar: "(so far)",
       whatDoneItems: [
         <>Build a community of over 2,5k subscribers and more than 500k views &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on <a href="https://www.youtube.com/@Astrw__" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Youtube</a> and <a href="https://www.tiktok.com/@astrw.x" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Tiktok</a>.</>,
-        <>Create videos for channels with <a href="https://www.youtube.com/@NaxoLCN" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">7.81k</a>, <a href="https://www.youtube.com/@ShotaPrime" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">81.1k</a> and <a href="https://www.youtube.com/@darteuh" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">139k</a> subscribers.</>,
+        <>Create videos for channels with <a href="https://www.youtube.com/@NaxoLCN" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">7.88k</a>, <a href="https://www.youtube.com/@ShotaPrime" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">81.1k</a> and <a href="https://www.youtube.com/@darteuh" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">139k</a> subscribers.</>,
         <>Learning coding at the age of 7 and still enjoy coding now.</>,
       ],
       whatBuiltTitle: "What I've built",
@@ -133,7 +133,7 @@ function App() {
       <div className="absolute top-[100px] left-1/2 -translate-x-1/2 z-10 w-[780px] ml-6">
         <div className="flex items-center space-x-4">
           <img
-            src="/ppv3.jpg"
+            src="/PP2.png"
             alt="Photo de profil"
             className="w-32 h-32 rounded-full shadow-lg object-cover"
           />
@@ -239,9 +239,9 @@ function App() {
             alt: "Description 2",
             tooltip: lang === 'en' ? "Me working" : "Moi en train de travailler"
           }, {
-            src: "/path/to/image3.jpg",
+            src: "vinyl.jpg",
             alt: "Description 3",
-            tooltip: lang === 'en' ? "Message 3" : "Message 3"
+            tooltip: lang === 'en' ? "My vinyl collection" : "Ma collection de vinyles"
           }].map(({ src, alt, tooltip }, i) => (
             <div key={i} className="relative group w-1/3 overflow-hidden rounded-lg">
               <img
