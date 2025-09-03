@@ -84,7 +84,7 @@ function App() {
       ],
       whatBuiltTitle: "Ce que j'ai construit",
       whatBuiltItems: [
-        <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un exemple de site pour une boutique TGC</a></>,
+        <><a href="https://cardshop.astrw.me/" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un exemple de site pour une boutique TGC</a></>,
         <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un bot Discord pour tracker la productivité avec l'API Notion</a></>,
       ],
       loveWorkingTitle: "J'aime travailler avec ...",
@@ -239,7 +239,7 @@ function App() {
             alt: "Description 2",
             tooltip: lang === 'en' ? "Me working" : "Moi en train de travailler"
           }, {
-            src: "vinyl.jpg",
+            src: "vinyl2.jpg",
             alt: "Description 3",
             tooltip: lang === 'en' ? "My vinyl collection" : "Ma collection de vinyles"
           }].map(({ src, alt, tooltip }, i) => (
