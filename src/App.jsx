@@ -46,7 +46,7 @@ function App() {
       ],
       whatBuiltTitle: "What I've built",
       whatBuiltItems: [
-        <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">An example for a TGC store website</a></>,
+        <><a href="https://cardshop.astrw.me/" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">An example for a TCG store website</a></>,
         <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">A Discord bot to track productivity using Notion's API</a></>,
       ],
       loveWorkingTitle: "I love working with ...",
@@ -84,7 +84,7 @@ function App() {
       ],
       whatBuiltTitle: "Ce que j'ai construit",
       whatBuiltItems: [
-        <><a href="https://cardshop.astrw.me/" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un exemple de site pour une boutique TGC</a></>,
+        <><a href="https://cardshop.astrw.me/" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un exemple de site pour une boutique TCG</a></>,
         <><a href="" target="_blank" rel="noopener noreferrer" className="text-[#FFFAFA] underline">Un bot Discord pour tracker la productivité avec l'API Notion</a></>,
       ],
       loveWorkingTitle: "J'aime travailler avec ...",
