@@ -239,7 +239,7 @@ function App() {
             alt: "Description 2",
             tooltip: lang === 'en' ? "Me working" : "Moi en train de travailler"
           }, {
-            src: "vinyl2.jpg",
+            src: "vinyl.jpg",
             alt: "Description 3",
             tooltip: lang === 'en' ? "My vinyl collection" : "Ma collection de vinyles"
           }].map(({ src, alt, tooltip }, i) => (
