@@ -1,0 +1,117 @@
+body{
+
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajouté */
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img {
+    width: calc(33.33% - 20px);
+    padding: px;
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 67px;
+    display: block;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute; /* texte au-dessus de l'image */
+    top: 0;             /* ou bottom: 0; selon où tu veux le texte */
+    left: 0;
+    width: 100%;
+    height: 100%;       /* couvre toute l'image */
+    display: flex;      /* pour centrer le texte */
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 20px;
+    opacity: 0;         /* invisible au départ */
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    text-shadow: 3px 3px 4px black;
+    font-size: 45px;
+    text-align: center;
+}
+
+/* Quand on survole l'image */
+.img-container:hover .overlay-text {
+    opacity: 1;
+    overflow: hidden;
+
+}
+
+
+
+#MyWorkTitre{
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 40px;
+}
+
+.img:hover {
+    transform: scale(1.02); /* L'image grandit un peu */
+    filter: brightness(70%); /* rendu un peu gris/sombre */
+     border-radius: 67px;
+         overflow: hidden;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    font-size: 34px;
+    font-style: italic;
+}
+
+/* --- Responsive --- */
+
+/* Tablette : 2 par ligne */
+@media (max-width: 900px) {
+    .img {
+        width: calc(50% - 20px); /* 2 par ligne */
+    }
+}
+
+@media (max-width: 600px) {
+    .img {
+        width: calc(100% - 20px); /* 1 par ligne */
+    }
+
+
+}
+
