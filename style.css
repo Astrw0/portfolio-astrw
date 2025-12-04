@@ -1,23 +1,56 @@
 body{
 
-    background-color: rgb(255, 255, 255);
+    background-color: #FCF9F7;
+
+    
 }
+html{
+    cursor: url('pngegg.png'), auto;
+    
+}
+
+
 
 header{
     display: flex;
-    
-    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    background-image: url("Calque\ 1.png"), url("Sans\ titre-1.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, center;
+    background-size: 350px, cover;
+    border-radius: 35px;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
+    font-size: 58px;
+}
+
+#nuage{
+    position: absolute;
+    top: 420px;
+    right: 100px;
+    width: 200px;
+}
+
+
+button{
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+
+#headerImage{
+    
+    transform: translateY(40px); /* vers le bas */
+
 }
 
 #projectsContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Ajouté */
-    background-color: rgb(255, 255, 255);
+    background-color: #FCF9F7;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -71,11 +104,13 @@ header{
 
 
 
-#MyWorkTitre{
+#MyWorkImg{
     font-size: 60px;
     font-style: italic;
     font-weight: bold;
-    margin: 40px;
+    margin: 60px;
+    margin-top: 80px;
+    width: 30%;
 }
 
 .img:hover {
@@ -83,6 +118,12 @@ header{
     filter: brightness(70%); /* rendu un peu gris/sombre */
      border-radius: 67px;
          overflow: hidden;
+    cursor: url('Cursor107.png'), auto;
+}
+
+#pastrw{
+    left: 10px;
+    font-size: 20px;
 }
 
 #footer {
@@ -92,7 +133,7 @@ header{
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #FCF9F7;
     padding: 20px 0;
     font-size: 34px;
     font-style: italic;
@@ -111,6 +152,28 @@ header{
     .img {
         width: calc(100% - 20px); /* 1 par ligne */
     }
+    header{
+        font-size: 30px;
+    }
+    #headerImage{
+    
+    transform: translateY(40px); /* vers le bas */
+    }
+    #nuage{
+    position: absolute;
+    top: 420px;
+    left: 20px;
+    width: 200px;
+}
+
+    #MyWorkImg{
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 60px;
+    margin-top: 80px;
+    width: 70%;
+}
 
 
 }
