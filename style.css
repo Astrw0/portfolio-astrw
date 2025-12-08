@@ -104,14 +104,7 @@ button{
 
 
 
-#MyWorkImg{
-    font-size: 60px;
-    font-style: italic;
-    font-weight: bold;
-    margin: 60px;
-    margin-top: 80px;
-    width: 30%;
-}
+
 
 .img:hover {
     transform: scale(1.02); /* L'image grandit un peu */
@@ -139,6 +132,113 @@ button{
     font-style: italic;
 }
 
+/* CSS */
+:root{
+
+  --btn-text: #1f2937;      /* gris foncé pour bon contraste */
+  --btn-border: rgba(31,41,55,0.08);
+  --btn-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  --btn-shadow-hover: 0 10px 30px rgba(15,23,42,0.09);
+  --btn-radius: 9999px;     /* pill shape; remplacer par 12px pour arrondi standard */
+  --btn-padding-y: 0.55rem;
+  --btn-padding-x: 1.1rem;
+  --btn-font-size: 0.95rem;
+  --btn-font-weight: 600;
+  --btn-focus: 0 0 0 4px rgba(99,102,241,0.12); /* focus ring (violet clair) */
+}
+
+/* Reset minimal pour boutons */
+button.btn-white{
+background: transparent;            /* Fond transparent */
+  border: 1px solid rgba(31,41,55,0.25);  /* Bordure un peu plus visible */
+  color: #1f2937; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  color: var(--btn-text);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--btn-shadow);
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Hover / focus / active */
+button.btn-white:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-hover);
+  filter: brightness(0.99);
+}
+button.btn-white:active{
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(15,23,42,0.08);
+}
+button.btn-white:focus{
+  outline: none;
+  box-shadow: var(--btn-shadow-hover), var(--btn-focus);
+}
+
+/* Disabled */
+button.btn-white:disabled,
+button.btn-white[aria-disabled="true"]{
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Petite variante (compact) */
+button.btn-white.small{
+  --btn-padding-y: 0.35rem;
+  --btn-padding-x: 0.7rem;
+  --btn-font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Variante avec icône (ex : svg à gauche) */
+button.btn-white .icon{
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Respecter les préférences de réduction d'animation */
+@media (prefers-reduced-motion: reduce){
+  button.btn-white{
+    transition: none;
+  }
+}
+
+#MyWorkTitre{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgtitrework{
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 60px;
+    margin-top: 80px;
+    width: 90%;
+ opacity: 0.99;
+}
+
+
+
+
 /* --- Responsive --- */
 
 /* Tablette : 2 par ligne */
@@ -161,18 +261,14 @@ button{
     }
     #nuage{
     position: absolute;
-    top: 420px;
-    left: 20px;
+    top: 450px;
+    left: 15px;
     width: 200px;
 }
 
-    #MyWorkImg{
-    font-size: 60px;
-    font-style: italic;
-    font-weight: bold;
-    margin: 60px;
-    margin-top: 80px;
-    width: 70%;
+#MyWorkTitre{
+    text-align: center;
+
 }
 
 
