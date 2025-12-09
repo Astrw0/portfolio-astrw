@@ -10,12 +10,15 @@
     <header>
         <div> <img id="headerImage" src="astrwplayfare.png"><p id="pastrw">Astrww</p>
         <h2 id="subtitleHeader">Enhance your video<br> to the next level</h2>
-        <img id="nuage" src="Calque 1.png">
+        <img id="nuage1" src="Calque 1.png">
+        <img id="nuage2" src="Calque 1.png">
+        <img id="nuage3" src="Calque 1.png">
         <button id="btnContact" class="btn-white" type="button">Contact Me</button>
         </div>
        </header>
     <div id="MyWorkTitre"><img id="imgtitrework" src="LE TRUC BIEN NOISY LA.png"></div>
     <div id="projectsContainer">
+        <img id="nuage4"   src="Calque 1.png">
      <div class="img">
         <img id="ppmyyoutube" src="dadadadada.png">
       <div id="textmychannel" class="overlay-text">My videos on Youtube</div>
@@ -43,6 +46,7 @@
      
     </div>
     <div id="footer">
+        <img id="nuage5"   src="Calque 1.png">
         <h1>Contact</h1>
     </div>
     <script>
@@ -64,6 +68,7 @@
 
             headerImg.src = images[index];
             index = (index + 1) % images.length;
+            headerImg.style.zIndex = "3";
         }
 
         setInterval(changeheaderImage, 100);
@@ -121,6 +126,134 @@ document.addEventListener("DOMContentLoaded", () => {
         text6.style.opacity = "0";
 });
 });
+
+
+(function shake1 () {
+  const img = document.getElementById('nuage1');
+
+  // Position de base (sera prise comme centre de l'oscillation)
+  const baseX = img.offsetLeft;
+  const baseY = img.offsetTop;
+
+  let t = 0;
+
+  function float1() {
+    // Oscillation douce (sinusoïdale)
+    const offsetX = Math.sin(t) * 5;  // amplitude horizontale
+    const offsetY = Math.cos(t / 1.8) * 4; // amplitude verticale
+
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    t += 0.027; // vitesse très lente
+
+    requestAnimationFrame(float1);
+  }
+
+  float1();
+})();
+
+(function shake2 () {
+  const img = document.getElementById('nuage2');
+
+  // Position de base (sera prise comme centre de l'oscillation)
+  const baseX = img.offsetLeft;
+  const baseY = img.offsetTop;
+
+  let t = 0;
+
+  function float2() {
+    // Oscillation douce (sinusoïdale)
+    const offsetX = Math.sin(t) * 5;  // amplitude horizontale
+    const offsetY = Math.cos(t / 1.8) * 4; // amplitude verticale
+
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    t += 0.035; // vitesse très lente
+
+    requestAnimationFrame(float2);
+  }
+
+  float2();
+})();
+
+(function shake3 () {
+  const img = document.getElementById('nuage3');
+
+  // Position de base (sera prise comme centre de l'oscillation)
+  const baseX = img.offsetLeft;
+  const baseY = img.offsetTop;
+
+  let t = 0;
+
+  function float3() {
+    // Oscillation douce (sinusoïdale)
+    const offsetX = Math.sin(t) * 5;  // amplitude horizontale
+    const offsetY = Math.cos(t / 1.8) * 4; // amplitude verticale
+
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    t += 0.050; // vitesse très lente
+
+    requestAnimationFrame(float3);
+  }
+
+  float3();
+})();
+(function shake4 () {
+  const img = document.getElementById('nuage4');
+
+  // Position de base (sera prise comme centre de l'oscillation)
+  const baseX = img.offsetLeft;
+  const baseY = img.offsetTop;
+
+  let t = 0;
+
+  function float4() {
+    // Oscillation douce (sinusoïdale)
+    const offsetX = Math.sin(t) * 5;  // amplitude horizontale
+    const offsetY = Math.cos(t / 1.8) * 4; // amplitude verticale
+
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    t += 0.035; // vitesse très lente
+
+    requestAnimationFrame(float4);
+  }
+
+  float4();
+})();
+
+(function shake45() {
+  const img = document.getElementById('nuage5');
+
+  // Position de base (sera prise comme centre de l'oscillation)
+  const baseX = img.offsetLeft;
+  const baseY = img.offsetTop;
+
+  let t = 0;
+
+  function float5() {
+    // Oscillation douce (sinusoïdale)
+    const offsetX = Math.sin(t) * 5;  // amplitude horizontale
+    const offsetY = Math.cos(t / 1.8) * 4; // amplitude verticale
+
+    img.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+    t += 0.035; // vitesse très lente
+
+    requestAnimationFrame(float5);
+  }
+
+  float5();
+})();
+
+
+
+shake1();
+shake2();
+shake3();
+shake4();
+shake5();
 
     </script>
 </body>

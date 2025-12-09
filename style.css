@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'celinda'; /*a name to be used later*/
+    src: url('celinda-font/CelindaRegular-DY8ZD.otf'); /*URL to font*/
+}
+
+
+
+
+
+
 body{
 
     background-color: #FCF9F7;
@@ -12,27 +22,64 @@ html{
 
 
 header{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("Calque\ 1.png"), url("Sans\ titre-1.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left top, center;
-    background-size: 350px, cover;
+    background-image: url("Sans\ titre-1.png");
+    background-repeat : no-repeat;
+    background-position:  center;
+    background-size:  cover;
     border-radius: 35px;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     font-size: 58px;
+    z-index: 0;
+    font-family: Celinda;
 }
 
-#nuage{
+#subtitleHeader{
+    font-weight: lighter;
+}
+
+#nuage1{
     position: absolute;
-    top: 420px;
-    right: 100px;
+    top: 320px;
+    right: 130px;
+    width: 170px;
+}
+
+#nuage2{
+    position: absolute;
+    top: 400px;
+    left: 150px;
     width: 200px;
 }
 
+#nuage3{
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    z-index: -1;
+    left: 100px;
+}
+
+#nuage4{
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    top : 1250px;
+    right : 250px;
+}
+
+#nuage5{
+    position: absolute;
+    width: 250px;
+    z-index: 8;
+    left: 200px;
+    top: 1700px;
+}
 
 button{
     margin: 30px;
@@ -43,6 +90,7 @@ button{
 #headerImage{
     
     transform: translateY(40px); /* vers le bas */
+    z-index: 3;
 
 }
 
@@ -64,6 +112,7 @@ button{
     align-items: center;
     overflow: hidden;
     transition: transform 0.3s ease; /* Smooth animation */
+    z-index: 2;
 }
 
 .img img {
@@ -83,7 +132,7 @@ button{
     display: flex;      /* pour centrer le texte */
     justify-content: center;
     align-items: center;
-
+    font-family: celinda;
     color: white;
     font-size: 20px;
     opacity: 0;         /* invisible au départ */
@@ -259,18 +308,27 @@ button.btn-white .icon{
     
     transform: translateY(40px); /* vers le bas */
     }
-    #nuage{
+    #nuage1{
     position: absolute;
     top: 450px;
     left: 15px;
     width: 200px;
 }
+ #nuage2{
+    opacity: 0;
+ }
 
 #MyWorkTitre{
     text-align: center;
 
 }
-
+#nuage3{
+    left: 35px;
+    top: 15px;
 
 }
+#nuage5{
+    opacity: 0;
+}
 
+}
